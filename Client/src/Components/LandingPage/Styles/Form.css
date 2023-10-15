@@ -1,0 +1,177 @@
+.mainForm {
+  display: flex;
+  flex-direction: column;
+}
+.formDiv {
+  height: 50%;
+  width: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-color: aqua;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 15px 25px;
+  margin: 20px;
+}
+
+.registerButton {
+  width: 30%;
+  max-width: 8rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+}
+
+.registerButton:hover {
+  background: transparent;
+  color: aqua;
+}
+label {
+  color: aqua;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.registration .re1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.registration input {
+  border-radius: 7px;
+  padding-left: 3px;
+  border-color: aqua;
+  padding: 3px;
+  max-width: 80%;
+  text-align: left;
+  margin-bottom: 3px;
+}
+.Branch {
+  max-width: 9rem;
+}
+
+.registration textarea {
+  width: 100%;
+}
+.yearSelector {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.yearSelector select {
+  width: 80px;
+  border-radius: 7px;
+  padding-left: 3px;
+  border-color: aqua;
+  margin-bottom: 3px;
+}
+input::placeholder {
+  color: rgb(65, 62, 225);
+}
+
+textarea::placeholder {
+  color: rgb(65, 62, 225);
+}
+
+.yearSelector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.yearSelector div label {
+  margin-right: 10px;
+}
+
+.yearSelectorMain {
+  display: flex;
+  flex-direction: row;
+}
+
+.yearSelector1 {
+  display: flex;
+  flex-direction: column;
+}
+.yearSelector2 {
+  display: flex;
+  flex-direction: column;
+}
+.yearSelector2 input {
+  max-width: 70%;
+}
+.Empasis {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.Empasis div {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+}
+
+.Empasis input {
+  height: 20px;
+  width: 230px;
+  border-radius: 7px;
+  border-color: aqua;
+}
+
+.Empasis textarea {
+  border-radius: 7px;
+  border-color: aqua;
+}
+.Branch {
+  border-radius: 7px;
+  padding-left: 3px;
+  border-color: aqua;
+  height: 15px;
+  text-align: left;
+
+  margin-bottom: 3px;
+  margin-left: 8px;
+}
+
+.finalRegister {
+  width: fit-content;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  /* margin-left: 17rem; */
+  margin-top: 3rem;
+}
+
+.finalRegister:hover {
+  color: aqua;
+}
+
+@media screen and (min-width: 830px) {
+  .formDiv {
+    width: fit-content;
+  }
+
+  .registration input {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .formDiv {
+    width: 50%;
+  }
+  .registration input {
+    width: 90%;
+  }
+}
